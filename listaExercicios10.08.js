@@ -1,25 +1,30 @@
-//exercicio 1
-function tri(x, y, z) {
-    if (x + y > z && z + x > y && y + z > x) {
+
+//Exercício 01
+function verificaTriangulo(x, y, z) {
+
+    if ((x < y + z) || (y < x + z) || (z < x + y)) {
+
         if (x == y && y == z && z == x) {
-            return "Triangulo equilátero"
-
+            console.log("É um triângulo equilátero!")
+        } else if (x == y || y == z || z == x) {
+            console.log("É um triângulo isósceles!")
+        } else if (x != y && y != z && z != x) {
+            console.log("É um triângulo escaleno!")
         }
-        if (x == y || x == z || y == x || y == z) {
-            return "Triangulo isóceles"
-        } else if (x !== y && y !== z && z !== x) {
-            return "Triangulo Escaleno"
-        }
-
 
     } else {
-        return "não é um triangulo!"
+        console.log("Não é um triângulo!")
     }
-}
-console.log(tri(100, 4, 1))
+
+} 
+
+
+console.log("Exercício 01")
+verificaTriangulo(4, 7, 6)
+console.log("-----------------------------")
 
 //Exercício 02
-function decompor(valor) {
+function decomporNota(valor) {
     
     nota100 = Math.trunc(valor / 100)
     valor = valor - nota100 * 100
@@ -46,11 +51,11 @@ function decompor(valor) {
 }
 
 console.log("Exercício 02")
-decompor(250)
+decomporNota(250)
 console.log("-----------------------------")
 
 //Exercício 03
-function taxa(ano, valor) {
+function taxaDetran(ano, valor) {
     if (ano < 1990) {
         taxa = 0.01
     } else if (ano >= 1990) {
@@ -62,7 +67,7 @@ function taxa(ano, valor) {
 }
 
 console.log("Exercício 03")
-taxa(1990, 12500)
+taxaDetran(1995, 7600)
 console.log("-----------------------------")
 
 //Exercício 04
@@ -78,15 +83,15 @@ function aumentoSalario(salario, cargo) {
         aumento = 0.4
     }
 
-    salarioAumentado = salario + (salario * aumento)
+    salarioComAumento = salario + (salario * aumento)
 
     console.log("Salário antigo: " + salario)
-    console.log("Salário com aumento: " + salarioAumentado)
-    console.log("Diferença: " + (salarioAumentado - salario))
+    console.log("Salário com aumento: " + salarioComAumento)
+    console.log("Diferença: " + (salarioComAumento - salario))
 }
 
 console.log("Exercício 04")
-aumentoSalario(1440, 103)
+aumentoSalario(1200, 102)
 console.log("-----------------------------")
 
 //Exercício 05
@@ -108,7 +113,7 @@ function creditoEspecial(saldo) {
 }
 
 console.log("Exercício 05")
-creditoEspecial(500)
+creditoEspecial(450)
 console.log("-----------------------------")
 
 //Exercício 06
@@ -140,6 +145,7 @@ function lanchonete(codigo, qtd) {
     console.log("Total do pedido: " + total + " Reais")
 
 }
+
 console.log("Exercício 06")
-lanchonete(4, 8)
+lanchonete(2, 5)
 console.log("-----------------------------")

@@ -15,12 +15,14 @@ function tri(x, y, z) {
     } else {
         return "não é um triangulo!"
     }
+
+    return true
 }
-console.log(tri(100, 4, 1))
+//console.log(tri(100, 4, 1))
 
 //Exercício 02
 function decompor(valor) {
-    
+
     nota100 = Math.trunc(valor / 100)
     valor = valor - nota100 * 100
 
@@ -43,11 +45,13 @@ function decompor(valor) {
     console.log("Moedas de 1: " + nota1)
     console.log("Resto: " + valor)
 
+    return true
+
 }
 
-console.log("Exercício 02")
-decompor(250)
-console.log("-----------------------------")
+//console.log("Exercício 02")
+//decompor(250)
+//console.log("-----------------------------")
 
 //Exercício 03
 function taxa(ano, valor) {
@@ -59,16 +63,18 @@ function taxa(ano, valor) {
 
     imposto = valor * taxa
     console.log("Imposto a ser pago: " + imposto)
+
+    return true
 }
 
-console.log("Exercício 03")
-taxa(1990, 12500)
-console.log("-----------------------------")
+//console.log("Exercício 03")
+//taxa(1990, 12500)
+
 
 //Exercício 04
 function aumentoSalario(salario, cargo) {
 
-    if(cargo == 101) {
+    if (cargo == 101) {
         aumento = 0.1
     } else if (cargo == 102) {
         aumento = 0.2
@@ -83,15 +89,17 @@ function aumentoSalario(salario, cargo) {
     console.log("Salário antigo: " + salario)
     console.log("Salário com aumento: " + salarioAumentado)
     console.log("Diferença: " + (salarioAumentado - salario))
+
+    return true
 }
 
-console.log("Exercício 04")
-aumentoSalario(1440, 103)
-console.log("-----------------------------")
+//console.log("Exercício 04")
+//aumentoSalario(1440, 103)
+//console.log("-----------------------------")
 
 //Exercício 05
 function creditoEspecial(saldo) {
-    if (saldo >= 0 && saldo <= 200){
+    if (saldo >= 0 && saldo <= 200) {
         percentualCredito = 0
     } else if (saldo >= 201 && saldo <= 400) {
         percentualCredito = 0.2
@@ -105,11 +113,13 @@ function creditoEspecial(saldo) {
 
     console.log("Saldo médio: " + saldo)
     console.log("Crédito: " + credito)
+
+    return true
 }
 
-console.log("Exercício 05")
-creditoEspecial(500)
-console.log("-----------------------------")
+//console.log("Exercício 05")
+//creditoEspecial(500)
+//console.log("-----------------------------")
 
 //Exercício 06
 function lanchonete(codigo, qtd) {
@@ -139,7 +149,18 @@ function lanchonete(codigo, qtd) {
 
     console.log("Total do pedido: " + total + " Reais")
 
+    return true
 }
-console.log("Exercício 06")
-lanchonete(4, 8)
-console.log("-----------------------------")
+//console.log("Exercício 06")
+//lanchonete(4, 8)
+//console.log("-----------------------------")
+
+module.exports = {
+    exercicioUm: tri,
+    exercicioDois: decompor,
+    exercicioTres: taxa,
+    exercicioQuatro: aumentoSalario,
+    exercicioCinco: creditoEspecial,
+    exercicioSeis: lanchonete
+
+}

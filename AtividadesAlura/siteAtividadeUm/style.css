@@ -1,0 +1,58 @@
+body{
+    background:  #CCCCCC
+}
+
+#eu{
+    
+width: 100%;
+    
+height: 450px;
+}
+
+.principal{
+background-color: aqua;
+padding: 30px;
+}
+
+h1{
+    text-align: center;
+    color: rebeccapurple;
+    border: 10px solid black;
+    padding-top: 5px;
+    margin: 40px;
+}
+    p { 
+
+text-align: center;
+
+    }
+
+    #um{
+    font-size: 20px
+    }
+
+em strong{
+    color: rgb(62, 24, 233);
+}
+
+.itens{
+    font-style: italic;
+}
+
+.bomdia{
+    background-color: white;
+}
+
+.tituloCentralizado{
+    text-align: center;
+}
+ul{
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin-right: 15%;
+    padding: 20px;
+}
+.eugestor{
+   width: 50%;
+}

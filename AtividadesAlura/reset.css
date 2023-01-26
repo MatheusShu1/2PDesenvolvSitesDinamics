@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1000;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,6 +26,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
+	background: #BBBBBB;
 	display: block;
 }
 body {
@@ -33,6 +34,7 @@ body {
 }
 ol, ul {
 	list-style: none;
+	text-align: center;
 }
 blockquote, q {
 	quotes: none;

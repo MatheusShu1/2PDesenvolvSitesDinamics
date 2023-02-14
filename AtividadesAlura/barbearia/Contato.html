@@ -13,8 +13,8 @@
     <header>
         <div class="caixa">
 
-            <img
-                src="C:\Users\matheus.schuch\Documents\GitHub\2PDesenvolvSitesDinamics\AtividadesAlura\imagens\logo.png">
+        <h1> <img src="C:\Users\matheus.schuch\Documents\GitHub\2PDesenvolvSitesDinamics\AtividadesAlura\imagens\logo.png"
+                alt="Logo da Barbearia"></h1>
 
             <nav>
                 <ul>
@@ -47,8 +47,8 @@
             <label for="textarea"> Digite uma mensagem:</label>
             <textarea cols="70" rows="10" class="input-padrao"></textarea>
             
-            <div>
-                <p class="teste" id="teste">Como prefere o contato?</p>
+            <fieldset>
+                <legend>Como prefere o contato?</legend>
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
             
             
@@ -57,18 +57,28 @@
             
                 <label for="radio-wpp"><input type="radio" name="contato" value="whatsapp" id="radio-wpp" checked> WhatsApp</label>
             
-            </div>
-            
+            </fieldset>
+            <fieldset>
+                <legend> Qual o melhor horário para entrar em contato?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
             <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades no seu e-mail?</label>
 
-            <input type="submit" value="Enviar Fomulário">
+            <input type="submit" value="Enviar Fomulário" class="enviar">
         </form>
     </main>
 
     <footer>
-        <img src="C:\Users\matheus.schuch\Documents\GitHub\2PDesenvolvSitesDinamics\AtividadesAlura\imagens\logo-branco.png">
+        <img src="C:\Users\matheus.schuch\Documents\GitHub\2PDesenvolvSitesDinamics\AtividadesAlura\imagens\logo-branco.png"
+            alt="Logo da Barbearia">
 
         <p class="copy"> &copy; Copyright Shu 2023 </p>
+
     </footer>
 </body>
 
